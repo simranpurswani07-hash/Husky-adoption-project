@@ -1,0 +1,40 @@
+.videoSection {
+  padding: 80px 20px;
+  background: var(--arctic-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionHeader h2 {
+  font-family: var(--font-archivo-black), sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--deep-blue);
+  margin-bottom: 16px;
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.videoWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.8s ease-out;
+}
+
+.videoWrapper video {
+  width: 100%;
+  display: block;
+}

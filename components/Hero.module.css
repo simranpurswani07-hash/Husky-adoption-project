@@ -1,0 +1,118 @@
+.hero {
+  background: linear-gradient(135deg, rgba(26, 77, 109, 0.85) 0%, rgba(15, 58, 82, 0.9) 100%), 
+              url('https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=1600&h=900&fit=crop') center/cover;
+  padding: 80px 20px 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 20s ease-in-out infinite;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heroContent {
+  max-width: 700px;
+  animation: slideUp 0.8s ease-out;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--warm-coral);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: slideUp 0.8s ease-out 0.2s both;
+}
+
+.hero h1 {
+  font-family: var(--font-archivo-black), sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 24px;
+  animation: slideUp 0.8s ease-out 0.3s both;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.heroSubtitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 40px;
+  animation: slideUp 0.8s ease-out 0.4s both;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  animation: slideUp 0.8s ease-out 0.5s both;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btnPrimary {
+  background: var(--deep-blue);
+  color: white;
+  box-shadow: 0 4px 20px rgba(26, 77, 109, 0.3);
+}
+
+.btnPrimary:hover {
+  background: #153d56;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(26, 77, 109, 0.4);
+}
+
+.btnSecondary {
+  background: white;
+  color: var(--deep-blue);
+  border: 2px solid var(--deep-blue);
+}
+
+.btnSecondary:hover {
+  background: var(--deep-blue);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .ctaButtons {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
