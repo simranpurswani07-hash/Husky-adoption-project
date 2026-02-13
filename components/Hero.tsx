@@ -8,7 +8,7 @@ export default function Hero() {
           <div className={styles.badge}>❤️ Adopt Don't Shop</div>
           <h1>Save Huskies from the Heat</h1>
           <p className={styles.heroSubtitle}>
-            Arctic dogs rescued from Dubai's 50°C heat need homes in cold climates. Chipped, documented & ready for Europe/UK.
+            For those considering a Husky, beautiful Arctic dogs from Dubai are available for adoption to approved cold-climate homes. Fully documented and travel-ready for Europe/UK.
           </p>
           <div className={styles.ctaButtons}>
             <a href="https://wa.me/971502352616" className={`${styles.btn} ${styles.btnPrimary}`} target="_blank" rel="noopener noreferrer">
